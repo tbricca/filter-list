@@ -65,6 +65,25 @@
         </ul>
 
     </div>
+    <script>
+        // Get input element
+        let filterInput = document.getElementById('filterInput');
+        // Add event listener
+        filterInput.addEventListener('keyup', filterNames);
+
+        function filterNames() {
+            // Get value of input 
+            //we use .value because we want the value
+            let filterValue = document.getElementById('filterInput').value.toUpperCase();
+
+        }
+
+        // Get name ul
+        let names = document.getElementById('names');
+        // get li from ul
+        // query select all allows you to save everything based on its class name
+        let li = ul.querySelectAll()
+    </script>
 </body>
 
 </html>
