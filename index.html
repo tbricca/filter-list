@@ -80,9 +80,16 @@
 
         // Get name ul
         let names = document.getElementById('names');
-        // get li from ul
+        // get li from ul & put it into an array 
         // query select all allows you to save everything based on its class name
-        let li = ul.querySelectAll()
+        let li = ul.querySelectAll('li.collection-item');
+
+        // Loop through collection items 
+        for (let i = 0; i < li.length; i++) {
+            let a = li[i].getElementByTagName('a')[0];
+            /// [i] current iteration of the loop
+        };
+
     </script>
 </body>
 
